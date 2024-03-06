@@ -1,0 +1,13 @@
+version: 2
+
+conda:
+  environment: devtools/conda-envs/test_env.yaml
+
+build:
+  os: ubuntu-22.04
+  tools:
+    python: mambaforge-4.10
+
+sphinx:
+   configuration: docs/conf.py
+   fail_on_warning: false
